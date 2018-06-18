@@ -1,0 +1,12 @@
+
+<div class="myselect">
+<input type="text" name="myname" ng-model="mytext" placeholder="{{watermark}}" ng-click="showDropdown();" ng-keypress="keyEnter(mytext);"> <span  class="glyphicon glyphicon-chevron-down icon" ng-click="showDropdown();"></span>
+<div class="dropdown" ng-hide="hidedd">
+	<ul ng-repeat="item in ddmodel | orderBy:'desc'">
+		<li ng-click="selectData($event,item)" ng-class="{'selected': item.isSelected}">
+		   {{item.desc}}
+		</li>		 
+	</ul>
+</div>
+
+</div>

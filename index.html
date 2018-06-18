@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<body ng-app="myapp">
+
+<div ng-controller="myappctrl" class="container-fluid">
+  <h1>This is directive</h1>
+  <div class="row">
+  	<div class="col-md-6">
+          <div class="form-group">
+          	<label>
+          		 Enter Your City:          		 
+          	</label>
+          	<div my-select watermark="Please Select" mycity="mymodelcity" ddmodel="mycitylist"></div>
+          </div>
+  	</div>
+
+  </div>
+  
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="style/style.css" >
+<script src="app.js"></script>
+<script src="controller/myappctrl.js"></script>
+<script src="controller/mydirective.js"></script>
+
+</html>

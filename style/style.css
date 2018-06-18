@@ -1,0 +1,37 @@
+.myselect{
+	overflow: hidden;
+	position: absolute;
+}
+
+.myselect input[type="text"]{
+	width:220px;
+	    height: 32px;
+}
+.myselect div.dropdown{
+	width: 220px;
+	padding:7px;
+	max-height:200px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	position: relative;
+	z-index: 100;
+	border:1px solid #c1c1c1;
+}
+
+.myselect .dropdown li{
+	list-style: none;
+	padding:10px;
+	height:30px;
+	width:100%;
+}
+
+.myselect .dropdown ul{
+   line-height: 8px;
+    padding: 0px;
+}
+
+.icon:before{
+	color:#0089ff;
+	margin-left:-23px;
+}
+.myselect .dropdown li:hover,.selected{background-color: #c1c1c1}
